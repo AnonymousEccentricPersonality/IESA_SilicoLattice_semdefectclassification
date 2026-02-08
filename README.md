@@ -5,7 +5,7 @@
 **SEM-HiNet** is a deep learning framework designed for high-precision, high-speed semiconductor defect classification. It utilizes a **Multi-Head Hierarchical Architecture** built on an NXP-optimized **MobileNetV3** backbone.
 
 The project addresses the "needle in a haystack" problem in industrial Scanning Electron Microscope (SEM) imaging by combining intelligent noise filtering (Gatekeeping) with specialized defect expertise (Specialist Heads).
-
+![Project Architecture](docs/architecture.jpeg)
 ## 🧠 Technical Approach
 
 Our approach utilizes a single shared backbone to extract high-dimensional features, which are then processed by five parallel classification heads.
