@@ -1,6 +1,6 @@
 # SEM-HiNet: Hierarchical Industrial SEM Defect Classification
 
-![Industrial SEM Project Architecture](docs/architecture.png)
+![Industrial SEM Project Architecture](architecture.jpeg)
 *Figure 1: Hierarchical Multi-Head Architecture for Intelligent Triage and Classification.*
 
 ## 🚀 Project Overview
