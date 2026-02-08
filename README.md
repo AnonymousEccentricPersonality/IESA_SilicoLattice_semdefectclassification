@@ -11,9 +11,9 @@ The project addresses the "needle in a haystack" problem in industrial Scanning 
 ## 🧠 Technical Approach
 Our approach utilizes a single shared backbone to extract high-dimensional features, which are then processed by five parallel classification heads.
 
-* **H1 (The Gatekeeper):** Separates valid SEM data (Normal/Defect) from industrial noise and outliers (Bogus).
-* **H2 (The Router):** Directs defects into three primary geometric families: Line Defects, Area Defects, or Edge Defects.
-* **H3–H5 (The Specialists):** Binary experts trained to distinguish between subtle textures (e.g., Bridge vs. Open, LER vs. Incomplete Etch).
+* **Classifier 1 (The Gatekeeper):** Separates valid SEM data (Normal/Defect) from industrial noise and outliers (Bogus).
+* **Classifier 2 (The Router):** Directs defects into three primary geometric families: Line Defects, Area Defects, or Edge Defects.
+* **Classifier 3– classifier 5 (The Specialists):** Binary experts trained to distinguish between subtle textures (e.g., Bridge vs. Open, LER vs. Incomplete Etch).
 
 ### Key Training Innovations
 * **Stratified Partitioning:** Mathematically ensures proportional class distribution across training and validation sets.
