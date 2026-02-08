@@ -21,26 +21,3 @@ Our approach utilizes a single shared backbone to extract high-dimensional featu
 * **QAT (Quantization-Aware Training):** Simulates 8-bit precision during training for zero accuracy loss on the **i.MX 8M Plus NPU**.
 
 
-## 📂 Directory Structure
-
-```text
-.
-├── dataset/                   # Raw and Processed SEM Datasets
-│   ├── normal.rar            # Valid SEM scans (No defects)
-│   ├── bridge.rar           # Line defect category
-│   ├── open.rar               # Line defect category
-│   ├── cmp.rar               # Area defect category
-│   ├── crack.rar             # Area defect category
-│   ├── ler.rar              # Edge defect category
-│   └── inc_etch.rar         # Edge defect category
-├── docs/                   # Documentation and Assets
-│   └── architecture.jpeg    # Architecture diagram for README
-├── models/                 # Model Definitions & Weights
-│   ├── arch.py             # SEMHierarchicalNetV3_QAT class
-│   └── sem_final.pth       # Trained QAT model weights
-├── scripts/                # Training and Utility Scripts
-│   ├── train.py            # Main training loop with Head Weighting
-│   ├── evaluate.py         # Confusion Matrix & Recall reporting
-│   └── export_onnx.py      # NPU-specific conversion logic
-├── README.md               # Project documentation
-└── requirements.txt        # Python dependencies
