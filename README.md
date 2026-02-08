@@ -20,13 +20,6 @@ Our approach utilizes a single shared backbone to extract high-dimensional featu
 * **Weighted Head Loss:** Implements a custom loss function prioritizing specialist heads (H3-H5) with up to 8x weight to resolve leaf-node confusion.
 * **QAT (Quantization-Aware Training):** Simulates 8-bit precision during training for zero accuracy loss on the **i.MX 8M Plus NPU**.
 
-## 📊 Performance Metrics
-
-| Head | Level | Metric | Score |
-| :--- | :--- | :--- | :--- |
-| **H1** | Gatekeeper | Recall | **~99%** |
-| **H2** | Router | Accuracy | **100%** |
-| **H3-H5** | Specialists | Precision | **>95%** |
 
 ## 📂 Directory Structure
 
